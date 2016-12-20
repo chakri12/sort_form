@@ -5,8 +5,7 @@ app.controller('MaintCtrl', function($scope, dataService){
 	this.url = 'http://jsonplaceholder.typicode.com/users';
 	$scope.getDist = dataService.getDistance;  
 	$scope.addUser = function(data){
-		console.log($scope.data);
-		$scope.data.push(data);
+		$scope.data.push(data);     // some server request if(access) => 
 		$("#add_modal").modal('hide');
 	};
 
